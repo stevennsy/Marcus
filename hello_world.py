@@ -14,6 +14,6 @@ if __name__ == "__main__":
         raise ValueError("GEMINI_API_KEY not found in environment variables")
 
     genai.configure(api_key=api_key)
-    response = model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content("Explain how AI works")
     print(response.text)

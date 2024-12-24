@@ -1,0 +1,5 @@
+# Current environment and cache files
+.env
+.env.example
+.mypy_cache/
+.venv/
